@@ -1,0 +1,4 @@
+# Este arquivo só existe como proteção extra caso o domínio/subdomínio seja
+# apontado por engano para a RAIZ do projeto em vez da pasta "public".
+# O correto é configurar o subdomínio para apontar direto para /public.
+Require all denied

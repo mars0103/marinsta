@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Se o arquivo/pasta pedido existir de verdade (ex: webhook.php, assets/...), serve direto.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+# Nunca deixa .env ou pastas internas serem acessadas via navegador.
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>

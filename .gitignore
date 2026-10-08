@@ -1,0 +1,6 @@
+.env
+.forgot_password_lock
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
